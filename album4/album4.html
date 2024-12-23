@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Islam</title>
+ <link rel="stylesheet" href="../style.css">
+ 
+</head>                                                  
+<center> <pre style="color:red;">                                                                
+   ,---,              ,--,                         ____          
+,`--.' |            ,--.'|                       ,'  , `.        
+|   :  :            |  | :                    ,-+-,.' _ |        
+:   |  '  .--.--.   :  : '                 ,-+-. ;   , ||        
+|   :  | /  /    '  |  ' |     ,--.--.    ,--.'|'   |  ||        
+'   '  ;|  :  /`./  '  | |    /       \  |   |  ,', |  |,        
+|   |  ||  :  ;_    |  | :   .--.  .-. | |   | /  | |--'         
+'   :  ; \  \    `. '  : |__  \__\/: . . |   : |  | ,            
+|   |  '  `----.   \|  | '.'| ," .--.; | |   : |  |/             
+'   :  | /  /`--'  /;  :    ;/  /  ,.  | |   | |`-'              
+;   |.' '--'.     / |  ,   /;  :   .'   \|   ;/                  
+'---'     `--'---'   ---`-' |  ,     .-./'---'                   
+ </pre>    
+<body style="background-color:black;">
+ <h1>Islam krever mange Album&#129397;</h1>
+  <button id="btn">ENDER DET SLIK ?</button>
+  <h2>Velg album her: </h2>
+    <h3><a href="album4_1/index.html">Islam.&#129397;</h3></a>
+    <h3><a href="album4_2/index.html">Islam &#129397;.&#129397;</h3></a>
+    <h3><a href="album4_3/index.html">Islam &#129397;.&#129397;.&#129397;</h3></a>
+  </center>
+  <img src="https://media.tenor.com/RtZyUUhK3BYAAAAd/autodefense-self.gif" style=float:right>
+   <img src="muz.png"><img src="muzzi.jpg">
+ <h3>Start side for TS Islam-verk.</h3>
+     <script>
+  btn.addEventListener("click", messUP);    // Legg til event listener
+  //Rotate somting.
+// Initialize the variable R
+let R = 0;
+
+// Define the variables used in the animation
+let x1 = 1, x2 = 2, x3 = 3, x4 = 100, x5 = 150;
+let y1 = 1, y2 = 2, y3 = 3, y4 = 100, y5 = 150;
+
+//  called on button click
+function messUP () {
+    //   //Rotate any script-tag's you like ,or all tag-name  by a *
+    //let DI = document.getElementsByTagName('h2'); // kun tag-navn.
+      let DI = document.querySelectorAll('h1 , img');   // Velger elementer/tag her.
+    
+
+    let DIL = DI.length;
+
+    //animate the elements
+    function A() {
+        for (let i = 0; i < DIL; i++) { 
+            let DIS = DI[i].style; 
+            DIS.position = 'absolute'; 
+            DIS.left = (Math.sin(R * x1 + i * x2 + x3) * x4 + x5) + "px"; 
+            DIS.top = (Math.cos(R * y1 + i * y2 + y3) * y4 + y5) + "px";
+        }
+        R++;
+    }
+
+    // Start the animation with a 200 ms interval//Try differens speed
+    let intervalID = setInterval(A, 200); 
+
+    // Stop the animation after 2 seconds
+    setTimeout(function() {
+        clearInterval(intervalID); // Stop the animation(4 sec)
+        location.reload();         //reload after 4 sec animation(spinn)
+    }, 4000);                      //Costumice 
+} 
+</script>
+</body>
+</html>

@@ -15,11 +15,11 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('1.jpg'); /* Din bakgrunnsbilde-path */
+    background-image: url('1.jpg'); /* mitt bakgrunnsbilde-path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Holder bakgrunnsbildet bak alt annet */
+    z-index: -1; /* Bakgrunnsbildet bak alt annet */
 }
 a {
     color: blue; /* Default link color */
@@ -36,7 +36,7 @@ a:hover {
 
 
 h1 {
-    color:#333;
+    color:#333;  /*Blyant-farge*/
 }
 h2 {
     color: red;

@@ -56,30 +56,61 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!photo || !imageLists[folderName]) {
         return;
     }
+    // Hvis "photo" ikke fins i albumet, avslutt funksjonen.
+    if (!photo || !imageLists[folderName]) {
+        console.error("Photo element or image list not found."); // Debug log
+        return; // Stop execution if no photo element or folder is found
+    }
+
     // Konfigurer basepath og bilder
-    const basePath = `../${folderName}/images/`;//PATH til Folder's billed-mappe.
+    const basePath = `../${folderName}/images/`; // Path to folder's image directory
     const images = imageLists[folderName];
-    let currentIndex = images.indexOf(photo.src.split("/").pop()); // Finn nåværende bilde.
+
+    // Debugging function
+    const debugLog = () => {
+        console.log("Folder Name:", folderName);
+        console.log("Base Path:", basePath);
+        console.log("Images List:", images);
+        console.log("Current Index:", currentIndex);
+        console.log("Current Image Path:", photo.src);
+    };
+
+    // Finn nåværende bilde (initialize currentIndex)
+    let currentIndex = images.indexOf(photo.src.split("/").pop());
+    if (currentIndex === -1) currentIndex = 0; // Default to first image if not found
 
     // Oppdater bildet
     const updatePhoto = () => {
         photo.src = basePath + images[currentIndex];
+        debugLog(); // Log every time photo updates
     };
-    
+
     // Navigasjonsfunksjoner
     const showPrevious = () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around
         updatePhoto();
     };
+
     const showNext = () => {
-        currentIndex = (currentIndex + 1) % images.length;
+        currentIndex = (currentIndex + 1) % images.length; // Wrap around
         updatePhoto();
     };
 
     // Event listeners for navigasjon
-    prevButton?.addEventListener("click", showPrevious);
-    nextButton?.addEventListener("click", showNext);
+    prevButton?.addEventListener("click", () => {
+        console.log("Previous button clicked."); // Debug log
+        showPrevious();
+    });
 
+    nextButton?.addEventListener("click", () => {
+        console.log("Next button clicked."); // Debug log
+        showNext();
+    });
+
+    // Sørg for at første bilde vises med en gang
+    updatePhoto(); // Display the first image immediately
+    console.log("App initialized."); // Final debug log
 });
+
 
  

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
    
     if (securedLink) {
-        console.log("Adding event listener to secured link...");  // Dette bør vises også
+        console.log("Adding event listener to secured link...");  // Test,bør vises i console.log 
 
         securedLink.addEventListener("click", function (e) {
             console.log("secured link clicked!");  //  klikk test for secured link.
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Sjekk om koden er riktig
             if (accessCode === "2020") {
-                // Gå til sikret album
+                // Hvis rett,gå til sikret album
                 window.location.href = "album6/album6.html";
             } else if (accessCode === null || accessCode.trim() === "") {
                 // Håndter avbrutt prompt eller tomt svar
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageLists = {
         album1: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg","17.jpg","14.jpg","15.jpg","16.jpg","13.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg"],
         album2: ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg"],
-        album3: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg","14.jpg","15.jpg","16.jpg"],
+        album3: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg"],
         //album4: ["1.jpg"]  //START SIDEEN FOR X-ANTALL MUZZIE ALBUM.
         album4_1: ["1.jpg","2.jpg","3.jpg","4.jpg","6.jpg","5.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg"],
         album4_2: ["1.jpg","2.jpg","3.jpg","4.jpg","6.jpg","5.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg"],
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
     // Konfigurer basepath og bilder
-    const basePath = `../${folderName}/images/`;
+    const basePath = "../${folderName}/images/";///PATH til Folder's billed-mappe.
     const images = imageLists[folderName];
-    let currentIndex = images.indexOf(photo.src.split("/").pop()); // Finn nåværende bilde
+    let currentIndex = images.indexOf(photo.src.split("/").pop()); // Finn nåværende bilde.
 
     // Oppdater bildet
     const updatePhoto = () => {

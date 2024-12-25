@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
     // Konfigurer basepath og bilder
-    const basePath = "../${folderName}/images/"; //PATH til Folder's billed-mappe.
+    const basePath = `../${folderName}/images/`;//PATH til Folder's billed-mappe.
     const images = imageLists[folderName];
     let currentIndex = images.indexOf(photo.src.split("/").pop()); // Finn nåværende bilde.
 

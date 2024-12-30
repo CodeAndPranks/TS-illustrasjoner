@@ -8,7 +8,13 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+.img1 { 
+ width: 350px;          
+            height: auto;          
+            border: 5px solid black; 
+            border-radius: 40px; 
+            padding: 1px;       
+}
 .background {
     position: fixed;
     top: 0;
@@ -26,9 +32,9 @@ a {
     text-decoration: none; /* Removes underline by default */
     transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
 }
-
-a:hover {
-    color: black; /* Makes the link text dark on hover */
+ /*I prefrere to make links clearly-visible in this script*/
+a:hover {       
+    color: black; /* Makes link-text dark on hover */
     background-color: yellow; /* Optional: Adds a visible background */
     text-decoration: underline; /* Optional: Underlines the link */
     font-weight: bold; /* Optional: Makes the link bold */
@@ -36,7 +42,7 @@ a:hover {
 
 
 h1 {
-    color:#333;  /*Blyant-farge*/
+   color: red;  /*color:#333; Blyant-farge*,no,no/
 }
 h2 {
     color: red;
@@ -47,7 +53,6 @@ h3 {
 h4 {
     color: red;
 }
-
 button {
     position: relative;
     z-index: 1; /* Sikrer at knappen vises over bakgrunnen */

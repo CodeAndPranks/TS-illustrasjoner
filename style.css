@@ -56,16 +56,16 @@ h4 {
 button {
     position: relative;
     z-index: 1; /* Sikrer at knappen vises over bakgrunnen */
-    padding: 10px 20px;
+    padding: 25px 35px;
     margin: 10px;
     cursor: pointer;
     background-color:grey;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .button-container {
     display: flex;
-    gap: 15px; /* Space between buttons */
+    gap: 30%; /* Space between buttons */
     justify-content: center; /* Center-align the buttons */
 }
 .button-link {

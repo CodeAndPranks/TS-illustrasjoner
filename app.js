@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Select all elements in the body
+const elements = document.body.getElementsByTagName("*");
+for (let i = 0; i < elements.length; i++) {
+    elements[i].setAttribute("translate", "no");
+}
     // Referanser til elementene
     const photo = document.getElementById("photo");
     const prevButton = document.getElementById("prev");
@@ -87,6 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
         updatePhoto();
 };
 
+ // Navigasjonsfunksjoner
+    const showPrevious = () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around
+        updatePhoto();
+};
+
 
     const showNext = () => {
         currentIndex = (currentIndex + 1) % images.length; // Wrap around
@@ -119,7 +130,8 @@ if (nextButton) {
         handleNextClick();
     });
 };
- 
-   
+    updatePhoto(); // Sørg for at første bilde vises med en gang
+    console.log("App initialized."); // Final debug
+});   
   
  

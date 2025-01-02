@@ -91,14 +91,6 @@ for (let i = 0; i < elements.length; i++) {
         currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around
         updatePhoto();
 };
-
- // Navigasjonsfunksjoner
-    const showPrevious = () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around
-        updatePhoto();
-};
-
-
     const showNext = () => {
         currentIndex = (currentIndex + 1) % images.length; // Wrap around
         updatePhoto();

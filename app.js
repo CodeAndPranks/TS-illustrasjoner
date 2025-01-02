@@ -53,11 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         album7: ["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg", "6.jpg", "7.jpg", "8.jpg","9.jpg", "10.jpg", "11.jpg", "12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg"],
    }
     // Hvis "photo" ikke fins i albumet, avslutt funksjonen.
-    if (!photo || !imageLists[folderName]) {
-        return;
-    }
-    // Hvis "photo" ikke fins i albumet, avslutt funksjonen.
-    if (!photo || !imageLists[folderName]) {
+ if (!photo || !imageLists[folderName]) {
         console.error("Photo element or image list not found."); // Debug log
         return; // Stop execution if no photo element or folder is found
     }
@@ -82,35 +78,48 @@ document.addEventListener("DOMContentLoaded", () => {
     // Oppdater bildet
     const updatePhoto = () => {
         photo.src = basePath + images[currentIndex];
-        debugLog(); // Log every time photo updates
+        debugLog(); // Log every time photo updates.Console.log is greath !
     };
 
     // Navigasjonsfunksjoner
     const showPrevious = () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around
         updatePhoto();
-    };
+};
+
 
     const showNext = () => {
         currentIndex = (currentIndex + 1) % images.length; // Wrap around
         updatePhoto();
     };
+    // Define the click and touch event handlers
+const handlePrevClick = () => {
+    console.log("Previous button clicked."); // Debug log
+    showPrevious();
+};
 
-    // Event listeners for navigasjon
-    prevButton?.addEventListener("click", () => {
-        console.log("Previous button clicked."); // Debug log
-        showPrevious();
+const handleNextClick = () => {
+    console.log("Next button clicked."); // Debug log
+    showNext();
+};
+
+    // Add event listeners for both touch and click events
+if (prevButton) {
+    prevButton.addEventListener("click", handlePrevClick);
+    prevButton.addEventListener("touchstart", (event) => {
+        event.preventDefault(); // Prevents the default action to avoid triggering click event immediately after
+        handlePrevClick();
     });
+};
 
-    nextButton?.addEventListener("click", () => {
-        console.log("Next button clicked."); // Debug log
-        showNext();
+if (nextButton) {
+    nextButton.addEventListener("click", handleNextClick);
+    nextButton.addEventListener("touchstart", (event) => {
+        event.preventDefault(); // Prevents the default action to avoid triggering click event immediately after
+        handleNextClick();
     });
-
-    // Sørg for at første bilde vises med en gang
-    updatePhoto(); // Display the first image immediately
-    console.log("App initialized."); // Final debug log
-});
-
-
+};
+ 
+   
+  
  

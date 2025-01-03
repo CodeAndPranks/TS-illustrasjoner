@@ -11,10 +11,7 @@ img {
 .Imga { 
  width: 450px;          
             height: auto;          
-            border: 10px solid white; 
-            border-radius: 30px; 
-            padding: 1px;       
-    
+          
 }
 .ts-Img { 
  width: 350px;          

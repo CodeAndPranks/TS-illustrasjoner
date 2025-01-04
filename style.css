@@ -37,6 +37,10 @@ body, html {
      height: auto;     /* Adjust height if needed */
 }
 }
+img {
+    max-width: 100%; /* Prevent images from exceeding their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
 a {
     color: blue; /* Default link color */
     text-decoration: none; /* Removes underline by default */

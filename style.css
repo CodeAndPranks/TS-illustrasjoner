@@ -30,6 +30,13 @@ body, html {
    background-attachment: fixed; /* Add test Iphone,same as height 'vh' instead off 100% (line 25) */  
     z-index: -1; /* Bakgrunnsbildet bak alt annet */
 }
+/* Media query for iPhones and smaller devices*/ 
+ @media only screen and (max-width: 768px) { 
+   .background { 
+     background-attachment: scroll; /* Change to scroll for iPhones */
+     height: auto;     /* Adjust height if needed */
+}
+}
 a {
     color: blue; /* Default link color */
     text-decoration: none; /* Removes underline by default */

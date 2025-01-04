@@ -34,7 +34,7 @@ body, html {
  @media only screen and (max-width: 768px) { 
    .background { 
      background-attachment: scroll; /* Change to scroll for iPhones */
-     height: auto;     /* Adjust height if needed */
+     height: 100vh;     /* Adjust height if needed */
 }
 }
 img {

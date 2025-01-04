@@ -39,7 +39,7 @@ body, html {
 }
 img {
     max-width: 100%; /* Prevent images from exceeding their container's width */
-    height: auto; /* Maintain aspect ratio */
+    height:100vh; /* Maintain aspect ratio */
 }
 a {
     color: blue; /* Default link color */

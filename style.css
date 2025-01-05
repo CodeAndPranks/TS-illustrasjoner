@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* 'hidden' hindrer  ,'auto' tillater scrolling */
+}
+
+.Imga { 
+ width: 450px;          
+            height: auto;          
+          
+}
+.ts-Img { 
+ width: 350px;          
+            height: auto;          
+            border: 5px solid black; 
+            border-radius: 40px; 
+            padding: 1px;       
+}
+
+img {
+    max-width: 100%; /* Prevent images from exceeding their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.clickable-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+.clickable-image {
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 250px; /* Set a maximum width for smaller devices */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer for clickable images */
+    transition: transform 0.2s; /* Add a transition effect */
+}
+
+#image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the images horizontally */
+    gap: 30px; /* Add space between the images */
+    margin: 20px; /* Add some margin around the container */
+}
+
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('1.jpg'); /* mitt bakgrunnsbilde-path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   background-attachment: fixed; /* Add test Iphone,same as height 'vh' instead off 100% (line 25) */  
+    z-index: -1; /* Bakgrunnsbildet bak alt annet */
+}
+img {
+    max-width: 100%; /* Prevent images from exceeding their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+a {
+    color: blue; /* Default link color */
+    text-decoration: none; /* Removes underline by default */
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+ /*I prefrere to make links clearly-visible in this script*/
+a:hover {       
+    color: black; /* Makes link-text dark on hover */
+    background-color: yellow; /* Optional: Adds a visible background */
+    text-decoration: underline; /* Optional: Underlines the link */
+    font-weight: bold; /* Optional: Makes the link bold */
+}
+
+
+h1 {
+   color: red;  /*color:#333; Blyant-farge*,no,no*/
+}
+h2 {
+    color: red;
+}
+h3 {
+    color: blue;
+}
+h4 {
+    color: red;
+}
+button {
+    position: relative;
+    z-index: 1; /* Sikrer at knappen vises over bakgrunnen */
+    padding: 25px 35px;
+    margin: 10px;
+    cursor: pointer;
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+}
+.button-container {
+    display: flex;
+    gap: 30%; /* Space between buttons */
+    justify-content: center; /* Center-align the buttons */
+}
+.button-link {
+    display: inline-block; 
+    padding: 10px 20px;
+    margin: 0 10px; /* Horizontal spacing */
+    background-color: #007BFF; /* Nice blue color */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.button-link:hover {
+    background-color: #0056b3;/* Mørk blå hover farge */ 
+}
+
+

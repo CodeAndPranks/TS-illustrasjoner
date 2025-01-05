@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velg OS</title>
+    <link id="stylesheet" rel="stylesheet" href="style.css"> 
+</head>
+<body style="background-color:blue;">
+ <center><em><h1 style="color:black;">T.S illustrasjoner.</h1></em></center>
+    <h2>Iphone RØDT,klikk BLÅTT for andre enheter. </h2>
+    <h2>Iphone/Mac har en sær CSS-styling.</h2>
+    <h2>Jobber med Norsk flagg for Iphone.(CSS/iOS issue).</h2>
+    <div id="image-container">
+        <a href="iphone.html">
+            <img id="iphone.jpg" src="iphone.jpg" alt="iPhone" 
+                 style="cursor: pointer;" 
+                 onTouchStart="window.location='iphone.html';">
+        </a>
+        <a href="others.html">
+            <img id="others.jpg" src="others.jpg"alt="andre enheter" 
+                 style="cursor: pointer;">
+        </a>
+    </div>
+
+    <div id="content" style="display: none;">
+        <!-- wil bee populated with the device-specific content -->
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

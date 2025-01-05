@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* 'hidden' hindrer  ,'auto' tillater scrolling */
+}
+
+.Imga { 
+ width: 450px;          
+            height: auto;          
+          
+}
+.ts-Img { 
+ width: 350px;          
+            height: auto;          
+            border: 5px solid black; 
+            border-radius: 40px; 
+            padding: 1px;       
+}
+
+/* Media query for iPhones and smaller devices*/ 
+ @media only screen and (max-width: 768px) { 
+   .background { 
+     background-attachment: scroll; /* Change to scroll for iPhones */
+     height:100vh;     /* Adjust height if needed */
+}
+}
+
+img {
+    max-width: 100%; /* Prevent images from exceeding their container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+a {
+    color: blue; /* Default link color */
+    text-decoration: none; /* Removes underline by default */
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+ /*I prefrere to make links clearly-visible in this script*/
+a:hover {       
+    color: black; /* Makes link-text dark on hover */
+    background-color: yellow; /* Optional: Adds a visible background */
+    text-decoration: underline; /* Optional: Underlines the link */
+    font-weight: bold; /* Optional: Makes the link bold */
+}
+
+
+h1 {
+   color: white;  /*color:#333; Blyant-farge*,no,no*/
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: grey;
+}
+h4 {
+    color: red;
+}
+button {
+    position: relative;
+    z-index: 1; /* Sikrer at knappen vises over bakgrunnen */
+    padding: 25px 35px;
+    margin: 10px;
+    cursor: pointer;
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+}
+.button-container {
+    display: flex;
+    gap: 30%; /* Space between buttons */
+    justify-content: center; /* Center-align the buttons */
+}
+.button-link {
+    display: inline-block; 
+    padding: 10px 20px;
+    margin: 0 10px; /* Horizontal spacing */
+    background-color: #007BFF; /* Nice blue color */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.button-link:hover {
+    background-color: #0056b3;/* Mørk blå hover farge */ 
+}
+
+
+

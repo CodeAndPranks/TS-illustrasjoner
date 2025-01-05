@@ -81,15 +81,14 @@ a:hover {
     font-weight: bold; /* Optional: Makes the link bold */
 }
 
-
 h1 {
-   color: red;  /*color:#333; Blyant-farge*,no,no*/
+   color: white;  /*color:#333; Blyant-farge*,no,no*/
 }
 h2 {
-    color: red;
+    color: white;
 }
 h3 {
-    color: blue;
+    color: grey;
 }
 h4 {
     color: red;

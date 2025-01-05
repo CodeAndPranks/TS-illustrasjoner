@@ -17,6 +17,21 @@ body, html {
             border-radius: 40px; 
             padding: 1px;       
 }
+* Media query for iPhones and smaller devices */
+@media only screen and (max-width: 768px) {
+    .background {
+        background-attachment: scroll; /* Change to scroll for iPhones */
+        height:100vh; /* Keep height as full viewport height */
+    }
+}
+/* Optional: Content styles */
+.content {
+    position: relative; /* Ensure content is above background */
+    z-index: 1; /* Bring content above background */
+    padding: 20px; /* Add some padding */
+    color: black; /* Text color */
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -37,10 +52,18 @@ body, html {
      height: 100vh;     /* Adjust height if needed */
 }
 }
+/* Optional: Content styles */
+.content {
+    position: relative; /* Ensure content is above background */
+    z-index: 1; /* Bring content above background */
+    padding: 20px; /* Add some padding */
+    color: black; /* Text color */
+}
 img {
     max-width: 100%; /* Prevent images from exceeding their container's width */
-    height:100vh; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
 }
+
 a {
     color: blue; /* Default link color */
     text-decoration: none; /* Removes underline by default */

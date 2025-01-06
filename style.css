@@ -56,10 +56,6 @@ img {
    background-attachment: fixed; /* Add test Iphone,same as height 'vh' instead off 100% (line 25) */  
     z-index: -1; /* Bakgrunnsbildet bak alt annet */
 }
-img {
-    max-width: 100%; /* Prevent images from exceeding their container's width */
-    height: auto; /* Maintain aspect ratio */
-}
 
 a {
     color: blue; /* Default link color */

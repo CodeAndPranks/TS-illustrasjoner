@@ -25,7 +25,20 @@ body, html {
      height:100vh;     /* Adjust height if needed */
 }
 }
+.clickable-image {
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 250px; /* Set a maximum width for smaller devices */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer for clickable images */
+    transition: transform 0.2s; /* Add a transition effect */
+}
 
+#image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the images horizontally */
+    gap: 30px; /* Add space between the images */
+    margin: 20px; /* Add some margin around the container */
+}
 img {
     max-width: 100%; /* Prevent images from exceeding their container's width */
     height: auto; /* Maintain aspect ratio */

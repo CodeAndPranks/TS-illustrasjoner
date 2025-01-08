@@ -25,7 +25,7 @@ for (let i = 0; i < elements.length; i++) {
             e.preventDefault(); // Stopp standard navigasjon
 
             // Be om koden
-            const accessCode = prompt("Tast koden !");
+            const accessCode = prompt("Vennligst Tast Kode");
 
             // Sjekk om koden er riktig
             if (accessCode === "2020") {
@@ -33,14 +33,14 @@ for (let i = 0; i < elements.length; i++) {
                 window.location.href = "album6/album6.html";
             } else if (accessCode === null || accessCode.trim() === "") {
                 // Håndter avbrutt prompt eller tomt svar
-                alert("Lure muslim ?  \n Sikring kode: 2 feil gir virus i retur !");
+                alert("Lure muslim ?  \n Login-Secure: 2 feil gir virus i retur !");
             } else {
                 // Feil kode
-                alert("Feil kode!  \n Sikring kode: 2 feil gir virus i retur !");
+                alert("Feil kode!  \n Login-Secure:2 feil gir virus i retur !");
             }
         });
     } else {
-        console.error("Secured link eleement ikke funnet i DOM.");
+        console.error("Secured link element ikke funnet i DOM.");
     }
 
 

@@ -4,12 +4,6 @@ body, html {
     height: 100%;
     overflow: auto; /* 'hidden' hindrer  ,'auto' tillater scrolling */
 }
-
-.Imga { 
- width: 450px;          
-            height: auto;          
-          
-}
 .ts-Img { 
  width: 350px;          
             height: auto;          
@@ -65,11 +59,9 @@ h2 {
     color: white;
 }
 h3 {
-    color: grey;
+    color: white;
 }
-h4 {
-    color: red;
-}
+
 button {
     position: relative;
     z-index: 1; /* Sikrer at knappen vises over bakgrunnen */

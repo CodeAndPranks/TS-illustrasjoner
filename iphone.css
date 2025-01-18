@@ -19,14 +19,6 @@ body, html {
      height:100vh;     /* Adjust height if needed */
 }
 }
-.clickable-image {
-    width: 100%; /* Make the image take the full width of its container */
-    max-width: 250px; /* Set a maximum width for smaller devices */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer for clickable images */
-    transition: transform 0.2s; /* Add a transition effect */
-}
-
 img {
     max-width: 100%; /* Prevent images from exceeding their container's width */
     height: auto; /* Maintain aspect ratio */

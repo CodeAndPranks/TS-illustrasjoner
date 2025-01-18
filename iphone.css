@@ -38,16 +38,9 @@ a:hover {
 }
 
 
-h1 {
+h1 , h2 , h3 {
    color: white;  /*color:#333; Blyant-farge*,no,no*/
 }
-h2 {
-    color: white;
-}
-h3 {
-    color: white;
-}
-
 button {
     position: relative;
     z-index: 1; /* Sikrer at knappen vises over bakgrunnen */
@@ -57,11 +50,6 @@ button {
     background-color:white;
     border: none;
     border-radius: 10px;
-}
-.button-container {
-    display: flex;
-    gap: 30%; /* Space between buttons */
-    justify-content: center; /* Center-align the buttons */
 }
 .button-link {
     display: inline-block; 

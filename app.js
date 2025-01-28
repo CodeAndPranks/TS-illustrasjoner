@@ -33,7 +33,7 @@ for (let i = 0; i < elements.length; i++) {
                 window.location.href = "album6/album6.html";
             } else if (accessCode === null || accessCode.trim() === "") {
                 // Håndter avbrutt prompt eller tomt svar
-                alert("Lure muslim ?  \n Login-Secure: 2 feil gir virus i retur !");
+                alert("Du lever farlig  \n Login-Secure: 2 feil gir virus i retur !");
             } else {
                 // Feil kode
                 alert("Feil kode!  \n Login-Secure:2 feil gir virus i retur !");

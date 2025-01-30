@@ -4,7 +4,7 @@ const elements = document.body.getElementsByTagName("*");
 for (let i = 0; i < elements.length; i++) {
     elements[i].setAttribute("translate", "no");
 }
-    // Referanser til elementene
+  // Referanser til elementene
     const photo = document.getElementById("photo");
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");
@@ -13,9 +13,34 @@ for (let i = 0; i < elements.length; i++) {
     const pathParts = window.location.pathname.split("/");
     const folderName = pathParts[pathParts.length - 2]; // Nest siste del er foldernavnet
  
- //obfuscated code for secured album
-    
- const _0x1d3b4c=_0x5e61;(function(_0x23db38,_0x5eaf53){const _0x103781=_0x5e61,_0x5e803b=_0x23db38();while(!![]){try{const _0x306817=parseInt(_0x103781(0x167))/0x1+-parseInt(_0x103781(0x169))/0x2+-parseInt(_0x103781(0x160))/0x3*(parseInt(_0x103781(0x166))/0x4)+-parseInt(_0x103781(0x163))/0x5+parseInt(_0x103781(0x16a))/0x6+parseInt(_0x103781(0x161))/0x7*(parseInt(_0x103781(0x15c))/0x8)+-parseInt(_0x103781(0x165))/0x9*(-parseInt(_0x103781(0x15d))/0xa);if(_0x306817===_0x5eaf53)break;else _0x5e803b['push'](_0x5e803b['shift']());}catch(_0x1684aa){_0x5e803b['push'](_0x5e803b['shift']());}}}(_0x1508,0x8efd4));function _0x5e61(_0x537c62,_0x163e08){const _0x150891=_0x1508();return _0x5e61=function(_0x5e615d,_0x4b397e){_0x5e615d=_0x5e615d-0x152;let _0x811f6d=_0x150891[_0x5e615d];return _0x811f6d;},_0x5e61(_0x537c62,_0x163e08);}const securedLink=document[_0x1d3b4c(0x15a)](_0x1d3b4c(0x158));console[_0x1d3b4c(0x15f)](_0x1d3b4c(0x164),securedLink);securedLink&&(console['log'](_0x1d3b4c(0x157)),securedLink['addEventListener'](_0x1d3b4c(0x156),function(_0x14f0c7){const _0x284ad8=_0x1d3b4c;console[_0x284ad8(0x15f)](_0x284ad8(0x154)),_0x14f0c7[_0x284ad8(0x168)]();const _0x2ff098=prompt(_0x284ad8(0x155));if(_0x2ff098===_0x284ad8(0x152))window[_0x284ad8(0x162)][_0x284ad8(0x153)]=_0x284ad8(0x15b);else _0x2ff098===null||_0x2ff098===''?alert(_0x284ad8(0x15e)):alert('Feil\x20kode!\x20\x20\x0a\x20Login-Secure:2\x20feil\x20gir\x20virus\x20i\x20retur\x20!');}));here;function _0x1508(){const _0x3547d7=['2020','href','secured\x20link\x20clicked!','Vennligst\x20Tast\x20Kode','click','Adding\x20event\x20listener\x20to\x20secured\x20link...','secured-link','Hello\x20World!','getElementById','album6/album6.html','24woDqHF','579820zKusaX','\x20muslim\x20?\x20\x20\x0a\x20Login-Secure:\x202\x20feil\x20gir\x20virus\x20i\x20retur\x20!','log','3WvhdLs','390173CspYUK','location','5593990AGimZP','Secured\x20link\x20element\x20found:','252HNiNYa','1181932vTfRIv','485934XtlOfs','preventDefault','789930RiXpIK','709698oUauDm'];_0x1508=function(){return _0x3547d7;};return _0x1508();}function hi(){const _0x1a1882=_0x1d3b4c;console['log'](_0x1a1882(0x159));}hi();
+ const securedLink = document.getElementById("secured-link");
+    console.log("Secured link element found:", securedLink);  // chech secure elementet finn>
+   
+    if (securedLink) {
+        console.log("Adding event listener to secured link...");  // Test,bør vises i consol>
+
+        securedLink.addEventListener("click", function (e) {
+            console.log("secured link clicked!");  //  klikk test for secured link.
+            e.preventDefault(); // Stopp standard navigasjon
+
+            // Be om koden
+            const accessCode = prompt("Vennligst Tast Kode");
+
+            // Sjekk om koden er riktig
+            if (accessCode === "2020") {
+                // Hvis rett,gå til sikret album
+                window.location.href = "album6/album6.html";
+            } else if (accessCode === null || accessCode.trim() === "") {
+                // Håndter avbrutt prompt eller tomt svar
+                alert("Lure muslim ?  \n Login-Secure: 2 feil gir virus i retur !");
+            } else {
+                // Feil kode
+                alert("Feil kode!  \n Login-Secure:2 feil gir virus i retur !");
+            }
+        });
+    } else {
+        console.error("Secured link element ikke funnet i DOM.");
+    }
 
     // Bildelister for hver mappe
     const imageLists = {

@@ -5,4 +5,4 @@
 illustrasjoner/index.html
 
 🇳🇴T.S er en norsk satirekunstner som også leverer harde fakta og frustrasjoner
-Hvis du ikke blir forbanna, eller får deg en god latter er du på  ett sted med hvite frakker & senger med reimer på.🇳🇴
+Hvis du ikke blir forbanna, eller får deg en god latter er du på  ett sted med hvite frakker & senger med reimer på.

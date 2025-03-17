@@ -1,6 +1,6 @@
 # T.S illustrasjoner;
 🇺🇲T.S is a norwegian satire artist who
- deliver hard facts & frustration's too. If you don't get pissed off or get a good laugh,I know you're in a place with white coats got a bed with straps on.
+ deliver hard facts & frustration's too. If you don't get pissed off or get a good laugh,I know you're in a place with men in white coats and bed with straps on.
  
 https://codeandpranks.github.io/TS-illustrasjoner/index.html
 

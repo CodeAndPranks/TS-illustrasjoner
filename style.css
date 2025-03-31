@@ -35,7 +35,7 @@ img {
 
 #image-container {
     display: flex; /* Use flexbox for layout */
-    justify-content: center;/* img */
+    justify-content: center;/*center img contatiner*/
     gap: 30px; 
     margin: 20px; /* margin around container */
 }
@@ -90,14 +90,14 @@ button {
 }
 .button-container {
     display: flex;
-    gap: 30%; /* Space between buttons */
+    gap: 30%; 
     justify-content: center; /* Center-align the buttons */
 }
 .button-link {
     display: inline-block; 
     padding: 10px 20px;
     margin: 0 10px; /* Horizontal spacing */
-    background-color: #007BFF; /* Nice blue color */
+    background-color: #007BFF; /* Nice blue  */
     color: white; /* White text */
     text-decoration: none; /* Remove underline */
     border-radius: 5px;

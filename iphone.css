@@ -2,69 +2,64 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: auto; /* 'hidden' hindrer  ,'auto' tillater scrolling */
+    overflow: auto; 
 }
 .ts-Img { 
  width: 350px;          
             height: auto;          
             border: 5px solid black; 
-            border-radius: 40px; 
+            border-radius: 30px; 
             padding: 1px;       
 }
 
-/* Media query for iPhones and smaller devices*/ 
+/* Media query for iPhones og sm å  enheter */ 
  @media only screen and (max-width: 768px) { 
    .background { 
-     background-attachment: scroll; /* Change to scroll for iPhones */
-     height:100vh;     /* Adjust height if needed */
+     background-attachment: scroll; 
+     height:100vh;     
 }
 }
 img {
-    max-width: 100%; /* Prevent images from exceeding their container's width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto; 
 }
 
 a {
-    color: blue; /* Default link color */
-    text-decoration: none; /* Removes underline by default */
+    color: blue; 
+    text-decoration: none; 
     transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
 }
- /*I prefrere to make links clearly-visible in this script*/
+
 a:hover {       
-    color: black; /* Makes link-text dark on hover */
-    background-color: yellow; /* Optional: Adds a visible background */
-    text-decoration: underline; /* Optional: Underlines the link */
-    font-weight: bold; /* Optional: Makes the link bold */
+    color: black; 
+    background-color: yellow;
+    text-decoration: underline; 
+    font-weight: bold; 
 }
 
 
-h1 , h2 , h3 {
-   color: white;  /*color:#333; Blyant-farge*,no,no*/
+h1 {
+   margin-top: 20px; 
+            color: grey;
+            font-weight: 900;
+            font-family: 'Cursive', sans-serif;
+            font-size: 4.0em;
+            text-align: center;
+        }
+ h2 , h3 {
+   color: white; 
 }
-button {
-    position: relative;
-    z-index: 1; /* Sikrer at knappen vises over bakgrunnen */
-    padding: 25px 35px;
-    margin: 10px;
-    cursor: pointer;
-    background-color:white;
-    border: none;
-    border-radius: 10px;
+h4 {
+      text-align: center; 
+      color: blue;
 }
-.button-link {
-    display: inline-block; 
-    padding: 10px 20px;
-    margin: 0 10px; /* Horizontal spacing */
-    background-color: #007BFF; /* Nice blue color */
-    color: white; /* White text */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
+p  {
+   margin: 14px;
 }
 .button-link:hover {
     background-color: #0056b3;/* Mørk blå hover farge */ 
 }
+
 
 
 

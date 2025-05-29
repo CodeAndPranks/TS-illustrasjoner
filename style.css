@@ -15,12 +15,12 @@ body, html {
  @media only screen and (max-width: 768px) { 
    .background { 
      background-attachment: scroll; /* Change to scroll for iPhones */
-     height:100vh;     /* Adjust height if needed */
+     height:100vh;     
 }
  }
 img {
-    max-width: 100%; /* Prevent images from exceeding  */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 #photo {
     margin-top: 20px; 
@@ -28,16 +28,16 @@ img {
 .clickable-image {
     width: 100%; 
     max-width: 250px; /* for small devices */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     cursor: pointer; 
-    transition: transform 0.2s; /* Add a transition effect */
+    transition: transform 0.2s; /* smoot transmist */
 }
 
 #image-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center;/*center img contatiner*/
+    display: flex; /* flexbox for layout */
+    justify-content: center;
     gap: 30px; 
-    margin: 20px; /* margin around container */
+    margin: 20px; 
 }
 .background {
     position: fixed;
@@ -54,16 +54,16 @@ img {
 }
 
 a {
-    color: blue; /* Default link color */
+    color: blue; 
     text-decoration: none; /* Removes underline by default */
     transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
 }
  /*I prefrere to make links clearly-visible in this script*/
 a:hover {       
-    color: black; /* Makes link-text dark on hover */
-    background-color: yellow; /* Optional: Adds a visible background */
-    text-decoration: underline; /* Optional: Underlines the link */
-    font-weight: bold; /* Optional: Makes the link bold */
+    color: black; 
+    background-color: yellow; /* optional/valgfri*/
+    text-decoration: underline; /* Optional, valgfri Underlilink */
+    font-weight: bold; /* Optioal , valgfri */
 }
 
 h1 {
@@ -91,14 +91,14 @@ button {
 .button-container {
     display: flex;
     gap: 30%; 
-    justify-content: center; /* Center-align the buttons */
+    justify-content: center; 
 }
 .button-link {
     display: inline-block; 
     padding: 10px 20px;
     margin: 0 10px; /* Horizontal spacing */
     background-color: #007BFF; /* Nice blue  */
-    color: white; /* White text */
+    color: white; 
     text-decoration: none; /* Remove underline */
     border-radius: 5px;
     text-align: center;

@@ -7,13 +7,32 @@
     <link rel="stylesheet" href="../style.css">
    <script src="../app.js" defer></script>
 </head>
-<body style="background-color:yellow;">
-  
-   <center> <img id="photo" src="../album6/images/1.jpg" alt="Album6(Sensurert-Bilde">
-	   <div>
-        <button class="forrige" id="prev">Tilbake</button>...
+<style>
+	body {
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            margin: 0;
+        }
+        #photo {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .button-container {
+            margin-top: 10px; /* Space between image and buttons */
+        }
+    </style>
+</head>
+<body>
+    <img id="photo" src="../album6/images/1.jpg" alt="Album 6 (Sensurert-Bilder)">
+    <div class="button-container">
+        <button class="forrige" id="prev">Tilbake</button>
         <button class="neste" id="next">Neste</button>
-    </div></center>
-   <button><a href="../index.html">Til START Siden.</a></button><br>
+    </div>
+    <button><a href="../index.html">Til START Siden.</a></button>
+
 </body>
 </html>

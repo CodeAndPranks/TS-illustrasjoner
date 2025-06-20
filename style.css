@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: auto; /* 'hidden' hindrer  ,'auto' tillater scrolling */
+    overflow: auto;
 }
 .ts-Img { 
  width: 350px;          
@@ -33,7 +33,7 @@ img {
 }
 
 #image-container {
-    display: flex; /* flexbox for layout */
+    display: flex; 
     justify-content: center;
     gap: 30px; 
     margin: 20px; 
@@ -49,7 +49,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
    background-attachment: fixed; /* Add test Iphone,same as height 'vh' instead off 100% (line 25) */  
-    z-index: -1; /* Bakgrunnsbildet bak alt annet */
+    z-index: -1; 
 }
 
 a {
@@ -60,9 +60,9 @@ a {
  /*I prefrere to make links clearly-visible in this script*/
 a:hover {       
     color: black; 
-    background-color: yellow; /* optional/valgfri*/
-    text-decoration: underline; /* Optional, valgfri Underlilink */
-    font-weight: bold; /* Optioal , valgfri */
+    background-color: yellow;
+    text-decoration: underline; 
+    font-weight: bold; 
 }
 
 h1 {

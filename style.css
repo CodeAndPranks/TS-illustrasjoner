@@ -17,6 +17,7 @@ body, html {
      height:100vh;     
 }
  }
+ /* bilde fra index.html */
 img {
     max-width: 100%; 
     height: auto; 
@@ -48,7 +49,7 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-   background-attachment: fixed; /* Add test Iphone,same as height 'vh' instead off 100% (line 25) */  
+   background-attachment: fixed; /* Add test Iphone,same as height 'vh' instead off 100% linje 45/46 */  
     z-index: -1; 
 }
 
@@ -68,8 +69,11 @@ a:hover {
 h1 {
    color: red;  /*color:#333; Blyant-farge*,no,no*/
 }
-h2 {
-    color: red;
+
+    
+} h2 {
+    color: yellow;
+    margin: 10px;
 }
 h3 {
     color: blue;
@@ -81,7 +85,7 @@ button {
     position: relative;
     z-index: 1; /* Sikrer at knappen vises over bakgrunnen */
     padding: 25px 35px;
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
     background-color:white;
     border: none;

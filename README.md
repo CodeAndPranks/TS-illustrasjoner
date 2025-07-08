@@ -1,7 +1,6 @@
-**T.S illustrasjoner:     [ Norges fall gjennom 30 år ]**
- - Besøks-teller :
- 
-    ![Visitors](https://img.shields.io/badge/Visitors-0-brightgreen)
+# T.S illustrasjoner: Norges fall gjennom 30 år**
+ - Besøks-teller :  
+![Visitor Count](https://profile-counter.glitch.me/CodeAndpranks-TS-illustrasjoner/count.svg)
 
 ![Engelsk text](uk.png)
 

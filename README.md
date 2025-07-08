@@ -1,4 +1,8 @@
-**T.S illustrasjoner:[ Norges fall gjennom 30 år ]** 
+**T.S illustrasjoner:     [ Norges fall gjennom 30 år ]**
+ - Besøks-teller :
+ 
+    ![Visitors](https://img.shields.io/badge/Visitors-0-brightgreen)
+
 ![Engelsk text](uk.png)
 
 T.S is a norwegian satire artist who

@@ -1,4 +1,4 @@
-# T.S illustrasjoner: Norges fall gjennom 30 år**
+# T.S illustrasjoner: Norges fall gjennom 30 år
  - Besøks-teller :  
 ![Visitor Count](https://profile-counter.glitch.me/CodeAndpranks-TS-illustrasjoner/count.svg)
 

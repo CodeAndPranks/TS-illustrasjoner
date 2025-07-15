@@ -1,6 +1,7 @@
 # T.S illustrasjoner: Norges fall gjennom 30 år
  - Besøks-teller :  
-![Visitor Count](https://profile-counter.glitch.me/CodeAndpranks-TS-illustrasjoner/count.svg)
+
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=codeandpranks-test+repo.visitor-badge&left_text=Besøkede_nr )
 
 ![Engelsk text](uk.png)
 

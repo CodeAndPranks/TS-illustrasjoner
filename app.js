@@ -125,7 +125,7 @@ album4_1: [
                "47.jpg", "48.jpg", "49.jpg", "50.jpg"
               ],
         
-        album6: ["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg", "6.jpg", "7.jpg", "8.jpg","9jpg","10.jpg", "11.jpg",
+        album6: ["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg", "6.jpg", "7.jpg", "8.jpg", "9jpg", "9.png", "10.jpg", "11.jpg",
                 ],
        album7: ["1.jpg", "2.jpg", "3.jpg","4.jpg","5.jpg", "6.jpg", "7.jpg", "8.jpg","9jpg","10.jpg", "11.jpg",
                 "12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg",

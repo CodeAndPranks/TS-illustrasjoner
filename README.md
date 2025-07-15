@@ -1,7 +1,7 @@
 # T.S illustrasjoner: Norges fall gjennom 30 år
- - Besøks-teller :  
+ - Velkommen du er :  
 
-![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=codeandpranks-test+repo.visitor-badge&left_text=Besøkede_nr )
+   ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=codeandpranks-TS-illustrasjoner.visitor-badge&left_text=Besøkede_nr )
 
 ![Engelsk text](uk.png)
 

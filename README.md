@@ -13,5 +13,7 @@ https://codeandpranks.github.io/TS-illustrasjoner
 T.S er en norsk satirekunstner som også leverer harde fakta og frustrasjoner.
 Hvis du ikke blir forbanna eller får deg en god latter er du nok på ett sted med hvite frakker & har seng med reimer på.
 
--Kontroll teller 
+-Kontroll-teller [~pluss 9]
+
+![](https://komarev.com/ghpvc/?username=CodeAndPranks&abbreviated=true)
 
